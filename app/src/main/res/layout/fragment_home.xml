@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome">
+    <LinearLayout
+        android:id="@+id/linaer_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/select_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_product"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="32sp"/>
+        <ImageView
+            android:id="@+id/hamburguesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+
+            android:src="@drawable/hamburguer"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pizza"
+            android:layout_margin="30dp"
+
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/enselada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+
+            android:src="@drawable/salad"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/Taco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+
+            android:src="@drawable/taco"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigatio_grahp"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.examendiciembre.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_detallePedido"
+            app:destination="@id/detallePedido" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallePedido"
+        android:name="com.example.examendiciembre.DetallePedido"
+        android:label="fragment_detalle_pedido"
+        tools:layout="@layout/fragment_detalle_pedido" >
+        <action
+            android:id="@+id/action_detallePedido_to_confirmarDatos"
+            app:destination="@id/confirmarDatos" />
+        <argument
+            android:name="productp"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmarDatos"
+        android:name="com.example.examendiciembre.ConfirmarDatos"
+        android:label="fragment_confirmar_datos"
+        tools:layout="@layout/fragment_confirmar_datos" >
+        <action
+            android:id="@+id/action_confirmarDatos_to_pedidoFinalizado"
+            app:destination="@id/pedidoFinalizado" />
+        <argument
+            android:name="cantidad"
+            app:argType="integer" />
+        <argument
+            android:name="comer"
+            app:argType="boolean" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="producto"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pedidoFinalizado"
+        android:name="com.example.examendiciembre.PedidoFinalizado"
+        android:label="fragment_pedido_finalizado"
+        tools:layout="@layout/fragment_pedido_finalizado" />
+</navigation>
